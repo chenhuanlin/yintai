@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>item.yintai</title>
+		<link rel="stylesheet" href="css/header-footer.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/goods-show.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.min.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/goods-show.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	</head>
+	<body>
+		<div id="header-wrap">
+			<div id="header">
+				<ul class="header-a">
+					<li><a class="header-li1" href="javascript:;">银泰首页  |</a></li>
+					<li class="weixin">
+						<a class="header-li2" href="javascript:;">微信 |</a>
+					</li>
+					<li><a class="header-li3" href="javascript:;">手机银泰  |</a></li>
+				</ul>
+				<ul class="header-b">
+					<li>hi,欢迎来到银泰网！</li>
+					<li><a href="log_number.html"> 登录  </a></li>
+					<li><a href="set_number.html">欢迎注册 |</a></li>
+					<li><a href="javascript:;"> 我的订单 |</a></li>
+					<li id="my-yintai">
+						<a href="javascript:;"> 我的银泰     
+							<span style="position: absolute;top:13px;left:55px;">
+								<img src="img/my-yintai1.png" />
+							</span>
+							<span style="position: absolute;top:13px;left:55px;display: none;">
+								<img src="img/my-yintai2.png" />
+							</span>
+						</a>
+						<div id="my-yintai1">
+							<a href="javascript:;">我的收藏</a>
+							<a href="javascript:;">我的余额</a>
+							<a href="javascript:;">我的银元</a>
+							<a href="javascript:;">我的银泰卡</a>
+							<a href="javascript:;">我的优惠券</a>
+							<a style="border-bottom: 0;" href="javascript:;">我的积分</a>
+						</div>
+					</li>
+					<li><a href="javascript:;">|  银泰卡 </a></li>
+					<li><a style='color: #e5004f;' href="javascript:;"> 帮助中心</a></li>
+				</ul>
+			</div>
+		</div>
+	<!--上面是第一部分-->
+		
+		<div id="logo-wrap">
+			<div id="logo">
+				<a class='logo-pic' href="index.html">
+					<img src="img/logo.jpg" title="银泰百货" alt="银泰LOGO" />
+				</a>
+				<div id="kong-a"></div>
+				<div id="logo-pic1">
+					<a href="javascipt:;"><img src="img/logo-pic.gif"></a>
+				</div>
+				<div id="logo-right">
+					<form name="search-form" id="search-form" >
+						<input type="text" id="search-box" value="" placeholder="女鞋满减 全场满 100-20 200-50"/><a id='search-btn' href="javascript:;"></a>
+						<ul id="search-kuayu-ul"></ul>
+					</form>
+					<a href="shopping_car.html">
+						<div id="shopping-car">
+							购物袋 <span class="goods-jian" style="color: #e50048;">
+								 0 
+							</span> 件
+						</div>
+					</a>
+					
+					<ul class="search-bottom">
+						<li>
+							<a style="color: #e5004f;" href="javascript">奢品潮流服饰</a>
+						</li>
+						<li><a href="javascript">新风衣新风尚</a></li>
+						<li>
+							<a style="color: #e5004f;" href="javascript">沐琅  完美身材</a>
+						</li>
+						<li><a href="javascript">百年纪念买一送一</a></li>
+					</ul>
+					<div id="radio">
+						<ul id="radio-lis">
+							<li><a href="javascript:;">关于近期有不法分...</a></li>
+							<li><a href="javascript:;">关于G20杭州地区...</a></li>
+							<li><a href="javascript:;">关于近期有不法分...</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="nav-wrap">
+			<div id="nav">
+				<div id="nav-all">全部分类</div>
+				<a class='nav1' href="javascript:;">银泰百货</a>
+				<a class='nav1' href="javascript:;">名品馆</a>
+				<a class='nav1' href="sale_goods.html">特卖</a>
+				<a class='nav1' href="javascript:;">海淘馆</a>
+			</div>
+		</div>
+		
+		<!--主要内容区-->
+		<div id="all-content-wrap">
+			<div id="all-content">
+				<div id="goods-show-name">
+					<a href="index.html">首页</a>
+					<span>></span>
+					<a href="javascript:;">女装</a>
+					<span>></span>
+					<a href="javascript:;">裙装</a>
+					<span>></span>
+					<a href="javascript:;">连衣裙</a>
+					<span>></span>
+					<a href="javascript:;">娣五季</a>
+					<span>></span>
+					<a href="javascript:;">时尚针织七分袖连衣裙</a>
+				</div>
+				<div id="goods-show">
+					<div id="set-big">
+						<div id="middle-pic">
+							<img src="img/goods-show-big1.jpg">
+							<div id="jingpian"></div>
+						</div>
+						<ul id="small-pics">
+							<li style="float: left;">&lt;</li>
+							<a href="javascript:;" class="small-pics1">
+								<img src="img/goods-show-big1.jpg">
+							</a>
+							<a href="javascript:;"><img src="img/goods-show-big2.jpg"></a>
+							<a href="javascript:;"><img src="img/goods-show-big3.jpg"></a>
+							<li style="float: right;">&gt;</li>
+						</ul>
+						<div id="big-pic">
+							<img src="img/goods-show-big1.jpg">
+						</div>
+						<div id="goods-num">
+							<span style="float: left;">商品编号：21-179-7402</span>
+							<a style="float: left;" href="javascript:;">收藏</a>
+							<div class="weixin">
+								<img src="img/goods-num-weix.jpg"/>
+								<div class="weixin-er">
+									<img src="img/show-weixin-er.jpg">
+								</div>
+							</div>
+							<div class="show-links">
+								<img src="img/show-xin.jpg"/>
+								<div class="show-links-er">
+									<img src="img/show-xin-er.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="goods-show-con">
+						<div class="spans1">
+							缔五季 时尚针织七分袖连衣裙 7744 
+						</div>
+						<div class="spans2">
+							<span style="color:#999;line-height: 30px;">直减价：</span>
+							<span style="color:#e5004f;font-size:18px;line-height:20px;">￥</span>
+							<span style="color:#e5004f;font-size:18px;line-height:20px;">79
+							</span>
+							<span style="color:#e5004f;">.00</span>
+							<span class="spans-con">1.6折</span>
+						</div>
+						<div class="spans3">
+							银泰价：
+							<span>￥199.00</span>
+							参考价：
+							<span>￥489.00</span>
+						</div>
+						<div class="spans4">
+							<div class="spans4-con">直降
+								<img class='sss' src="img/show-con-spans4.jpg">
+							</div>
+							<span>活动时间：9月6日 8:00~9月13日 10:00 </span>
+						</div>
+						<div class="spans5">
+							<span style="display: inline-block;margin-right:35px;">选择颜色</span>
+							<div class="spans5-con">
+								粉红
+								<div class="duihao"><img src="img/show-spans-duihao.jpg"></div>
+							</div>
+						</div>
+						<div class="spans6">
+							<span style="display: inline-block;margin-right:35px;">选择尺码</span>
+							<a href="javascript:;">S</a><!--class="spans6-xuanz"-->
+							<a href="javascript:;">M</a>
+							<a href="javascript:;">L</a>
+							<a href="javascript:;">XL</a>
+							<a href="javascript:;">XXL</a>
+						</div>
+						<div class="spans7">
+							<div id="goods-show-num">
+								<textarea class="goods-show-nums">1</textarea>
+								<div class="goods-num-bian">
+									<a href="javascript:;" class="goods-num-up"></a>
+									<a href='javascript:;' class="goods-num-down"></a>
+								</div>
+							</div>
+							<a href="javascript:;" class="right-buy"></a>
+							<a href="javascript:;" class="join-shoppingcar"></a>
+						</div>
+						<div class="spans8">
+							服务承诺：  √正品保障    √支持无理由退换货
+						</div>
+					</div>
+					<div id="goods-show-right">
+						<div class="goods-show-right1">
+							<a href="javascript:;"><img src="img/goods-show-right.jpg"></a>
+							<span>缔五季旗舰店</span>
+						</div>
+					</div>
+				</div>
+				<div id="goods-details-wrap">
+					<div id="goods-details">
+						<div class="span span1">商品详情</div>
+						<div class="span">商品评价</div>
+						<div class="span">商品咨询</div>
+						<div class="span">购买须知</div>
+						<div id="phone-shopping">
+							<a href="javascript:;"></a>
+							<div class="phone-shopping1">
+								<img src="img/phone-shopping-er.jpg">
+							</div>
+						</div>
+						<div id="join-shoppingcar2">
+							<a href="javascript:;"></a>
+							<div class="join-shoppingcar21">
+								<img src="img/join-shopping-er.jpg">
+							</div>
+						</div>
+					</div>
+					<div id="goods-too">
+						<span>人气推荐</span>
+						<a href="javascript:;">换一批</a>
+					</div>
+				</div>
+				<!--details详情的意思    商品详情-->
+				<div id="goods-details-pics">
+					<div id="details-pics-left">
+						<ul class="details-pics-left-block">
+							<img src="img/goods-details-pic.jpg">
+						</ul>
+						<ul style="display: none;">
+							<img src="img/goods-details-pic2.jpg">
+						</ul>
+						<ul class="details-form" style="display: none;">
+							<li><img src="img/details-form-pic.jpg"></li>
+							<li class="details-form1">
+								<select class="form-select"/>
+									<option>全部咨询</option>
+								</select>
+								<sapn style='display: inline-block;float: right;'>
+									温馨提示:商品咨询及恢复具有时效性，相关问答信息仅供参考。
+								</sapn>
+							</li>
+							<li style="line-height:80px;padding-left: 30px;">
+								暂无此款商品咨询信息
+							</li>
+							<li class="details-form2">
+								<p class="form-tishi1">请选择咨询类型</p>
+								<p class="form-tishi2">咨询内容不能少于5字符</p>
+								<span style="display: inline-block;width:60px;margin-bottom: 15px;">请选择：</span>
+								<select class="form-select2" name="form-select2"/>
+									<option value=0>请选择</option>
+									<option value=1>商品尺码</option>
+									<option value=2>商品材质</option>
+									<option value=3>商品颜色</option>
+									<option value=4>商品包装</option>
+								</select>
+								<span style="color: red;display: inline-block;width: 280px;">*必选</span>
+								<span style="display:block;width:60px;float: left;">内容：</span>
+								<textarea class="textarea"></textarea>
+								<span style="color: red;display: inline-block;">*必填</span>
+								<p style="padding-left: 60px;">温馨提示：</p>
+								<p style="padding-left: 60px;">
+									1、您可以登录用户中心点击[我的咨询]查看客服回复；
+								</p>
+								<p style="padding-left: 60px;">
+									2、咨询回复工作时间：每天9:00至18:00，在1-2个工作日内完成回复。
+								</p>
+								<a class='form-btn1' href="javascript:;">
+									<img src="img/form-btn1.jpg">
+								</a>
+							</li>
+						</ul> 
+						<ul style="display: none;"><img src="img/details-pic-end.jpg"></ul>
+					</div>
+					<div id="details-pics-right">
+						<ul class="details-pics-right1">
+							<li>
+								<img src="img/details-right-1.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="img/details-right-1.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="img/details-right-1.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="img/details-right-1.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<img src="img/details-right-2.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="img/details-right-2.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="img/details-right-2.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="img/details-right-2.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							
+						</ul>
+						<ul>
+							<li>
+								<img src="img/details-right-3.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="img/details-right-3.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="img/details-right-3.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							<li>
+								<img src="img/details-right-3.jpg">
+								<p>
+									<a href="javascript:;">
+										缔五季7732 秋季新品韩国<br>时尚气质优雅女装针织打底
+									</a>
+								</p>
+								<b>￥219</b>
+								<span>￥719</span>
+							</li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer-wrap">
+			<div id="footer">
+				<ul id="after-sale">  <!--sale   出售   after-sale  售后-->
+					<li class="phone" style="background: url(img/footer-a.jpg) no-repeat 45px 25px;">
+						<p>
+							<span class="phone-num">400-119-1111</span>
+							<span class="phone-time">8:00-24:00</span>
+						</p>
+						<p class="phone-email">service@yintai.com</p>
+					</li>
+					<li class="sale-a" style="background: url(img/footer-b.jpg) no-repeat 50px 30px;">
+						<p><span style="color: #e5004f;">15天</span>无忧退货</p>
+						<span class="sale-b">为您提供优质售后服务</span>
+					</li>
+					<li class="sale-a" style="background: url(img/footer-c.jpg) no-repeat 50px 30px;">
+						<p><span style="color: #e5004f;">100%</span>正品保证</p>
+						<span class="sale-b">品质护航 购物无忧</span>
+					</li>
+					<li class="sale-a" style="background: url(img/footer-d.jpg) no-repeat 45px 30px;">
+						<p><span style="color: #e5004f;">满199</span>免运费</p>
+						<span class="sale-b">为您提供优质物流</span>
+					</li>
+				</ul>
+				
+				<div id="about-us">
+					<a href="javascript:;"> 关于银泰 </a> |
+					<a href="javascript:;"> 帮助中心 </a> |
+					<a href="javascript:;"> 退换货政策 </a> |
+					<a href="javascript:;"> 网站地图 </a> |
+					<a href="javascript:;"> 代理合作 </a> |
+					<a href="javascript:;"> 品牌招商 </a> |
+					<a href="javascript:;"> 商务合作 </a> |
+					<a href="javascript:;"> 网站联盟 </a> |
+					<a href="javascript:;"> 联系我们 </a> |
+					<a href="javascript:;"> 加入银泰 </a> |
+					<a href="javascript:;"> 版权声明 </a> |
+					<a href="javascript:;"> 法律声明 </a>
+				</div>
+				
+				<div id="yintai-id">
+					<p>浙ICP备10200233号京公网安备110105019085增值电信业务经营许可证：浙B2-20110005</p>
+					<p>Yintai © 2016, 银泰电子商务有限公司.</p>
+				</div>
+				<div id="footer-end">
+					<a href="javascript:;" class="end1"><img src="img/footer-end1.jpg"></a>
+					<a href="javascript:;" class="end2"><img src="img/footer-end2.jpg"></a>
+					<a href="javascript:;" class="end3"><img src="img/footer-end3.jpg"></a>
+				</div>
+				
+			</div>
+		</div>
+		<!--上面是公用   的  footer-->
+	</body>
+</html>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
